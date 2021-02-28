@@ -3,7 +3,7 @@
 The purpose of this project is to build a weather dashboard that exhibits the data collected by Weather Station Sensor and stored by Weather Base Station. The dashboard get data from weather base station through RESP API exposed by it.
 
 ## Run the project
-To run the dashboard is only necessary serve the *index.html* on http server.
+To run the dashboard is only necessary serve the *index.html* on http server. It's possible to see the the dashboard working on [this link](https://profbrunolopes.github.io/weather-dashboard/)
 
 ## Related Projects
 
