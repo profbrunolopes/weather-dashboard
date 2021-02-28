@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="public/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="public/css/chart.min.css" />
+    <link rel="stylesheet" href="public/css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Weather Dashboard</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-3 mb-sm-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdown03"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Stations
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown01s">
+                  <li>
+                    <a id="station1" class="dropdown-item">#1 - Bruno's Room</a>
+                  </li>
+                  <li>
+                    <a id="station2" class="dropdown-item">#2 - Backyard</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      </nav>
+      <div id="station-alert" class="alert alert-danger text-center" role="alert"></div>
+      <h2 id="station-name" class="text-center">Bruno's Room</h2>
+      <div class="row">
+        <div class="col-sm text-center">
+          <input class="fs-3" type="text" value="0" id="temp" />
+          <div class="dial-label">Temperature</div>
+        </div>
+        <div class="col-sm text-center">
+          <input class="fs-3" type="text" value="0" id="humi" />
+          <div class="dial-label">Humidity</div>
+        </div>
+        <div class="col-sm text-center">
+          <input class="fs-3" type="text" value="0" id="pres" />
+          <div class="dial-label">Pression</div>
+        </div>
+        <div class="col-sm text-center">
+          <input class="fs-3" type="text" value="0" id="alti" />
+          <div class="dial-label">Altitude</div>
+        </div>
+      </div>
+      <div class="row gy-5">
+        <div class="col-sm">
+          <canvas
+            id="temp-canvas"
+            style="display: block; width: auto;"
+            width="787"
+            height="393"
+            class="chartjs-render-monitor"
+          ></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/jquery.knob.min.js"></script>
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+    <script src="public/js/chart.bundle.min.js"></script>
+    <script src="public/js/main.js"></script>
+  </body>
+</html>
