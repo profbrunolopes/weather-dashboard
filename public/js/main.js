@@ -196,7 +196,7 @@ function updateUI(data) {
 }
 
 function makeStationRequest(){
-  let url = `https://64c41278c430.ngrok.io/weather?station=${station.id}&limit=1`;
+  let url = `https://6f47039b0c6a.ngrok.io/weather?station=${station.id}&limit=1`;
   fetch(url)
     .then((resp) => resp.json())
     .then((data) => {
